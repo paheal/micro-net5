@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Catalog.API.Data;
+﻿using Catalog.API.Data;
 using Catalog.API.Entities;
 using MongoDB.Driver;
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Catalog.API.Repositories
 {
@@ -45,7 +44,6 @@ namespace Catalog.API.Repositories
             DeleteResult result = await _context.Products.DeleteOneAsync(filter);
 
             bool wasSuccessful = result.IsAcknowledged && result.DeletedCount > 0;
-
             return wasSuccessful;
         }
 
