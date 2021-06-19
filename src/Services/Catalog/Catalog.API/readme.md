@@ -6,7 +6,7 @@
 docker pull mongo
 
 **To run for project**  
- docker run -d -p 27017:27017 --name shopping-mongo mongo
+docker run -d -p 27017:27017 --name shopping-mongo mongo
 
 **To launch interactive terminal for docker mongo db**  
 docker exec -it shopping-mongo /bin/bash
