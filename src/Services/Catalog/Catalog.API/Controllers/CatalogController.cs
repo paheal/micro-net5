@@ -52,7 +52,6 @@ namespace Catalog.API.Controllers
         [ProducesResponseType(typeof(IEnumerable<Product>), (int)HttpStatusCode.OK)]
         public async Task<ActionResult<Product>> GetProductByCategory(string category)
         {
-
             var products = await _productRepository.GetProductByCategory(category);
             return Ok(products);
         }
