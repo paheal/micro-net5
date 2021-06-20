@@ -13,3 +13,13 @@ docker logs aspnetrun-redis
 
 **To launch interactive terminal**  
 docker exec -it aspnetrun-redis /bin/bash
+
+**Start cli in interactive terminal**  
+redis-cli
+
+**redis command -> returns**  
+ping "Hello" -> "Hello"  
+set key value -> OK  
+get key -> "value"  
+set id "Test Value" -> OK
+get id -> "Test Value"
